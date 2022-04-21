@@ -146,9 +146,6 @@ class total_model:
                     model_ret.append(I_tmp)
                     
         # np.savetxt("lol.txt",I_ret)
-        
-        
-        print(len(model_ret))
         return model_ret ### Binned modelled sequence shifted at (kp,v0)
 
 

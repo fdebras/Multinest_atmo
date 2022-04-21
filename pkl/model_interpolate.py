@@ -41,6 +41,7 @@ def prepare_to_likelihood(config,model,data,param):
     final_model = []
     final_data = []
     final_std = []
+    
     for i in range(config["num_transit"]):
         
         start = np.where(data["window"][i]>0.2)[0][0] 

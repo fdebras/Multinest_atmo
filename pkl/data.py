@@ -9,13 +9,13 @@ def make_data(args):
     radius_RJ = 1.138
     gravity_SI = 23.970 
     Rs_Rsun = 0.805   
-    num_transit = 1
+    num_transit = 2
     
     orderstot =[79, 78]#, 77, 76, 75, 74, 73, 72, 71, 70, 69, 68, 67, 66, 65, 64, 63,
 #       62, 61, 60, 59, 58, 52, 51, 50, 49, 48, 47, 46, 45, 44, 43, 38, 37,
 #       36, 35, 34, 33, 32, 31]
 
-    pkl = ["../data/test_GL15A.pkl"],
+    pkl = ["test_GL15A.pkl"],["test_GL15A_2.pkl"],
 
     
     lambdas = np.array([[  0.        ,   0.        ],

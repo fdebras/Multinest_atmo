@@ -131,7 +131,7 @@ def loglike(cube, ndim, nparams):
 pymultinest.run(loglike, prior, n_params,outputfiles_basename = 
                 "/home/florian/Bureau/Atmosphere_SPIRou/Multinest_atmo/pkl/output_test/", 
                 resume = False, verbose = True,
-                n_live_points=80,
+                n_live_points=8,
                 n_iter_before_update=1)
 
 

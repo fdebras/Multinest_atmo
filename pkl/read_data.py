@@ -16,7 +16,6 @@ def return_data(config_dict):
     window_data = []
     V_star = []
     for j in range(config_dict["num_transit"]):
-        print(j)
         with open(config_dict["pkl"][j][0],'rb') as ccfile:
             orders,Wmean,V,I,Std,phase,window,Vtot = pickle.load(ccfile)
         orders_data.append(orders)
