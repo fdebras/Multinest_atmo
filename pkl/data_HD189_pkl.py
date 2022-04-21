@@ -8,29 +8,12 @@ def make_data(args):
     mass_MJ = 1.142
     radius_RJ = 1.138
     gravity_SI = 23.970 
-    Rs_Rsun = 0.805
-    inc = 85.71
-    t0 = 2454403.677711 
-    sma = 8.839304998   # semi major axis in stellar radiu
-    orb_per = 2.21857519   #in days
-    ecc = 0.0041
-    w_peri = -24.1  # longiutude of periastron
-    limbdark = "linear"
-    
-    u_limbdark = [0.35]
-    
+    Rs_Rsun = 0.805   
     num_transit = 1
     
-    # Wmean = [2400.695909757236,2328.5343131275904,1972.9809993156186,
-    #          1927.2107049022654,]
-    # Wmean = [1634.5200937047302,1600.8109822367207],[1670.071564637037,1634.5459486709924,1600.8124596368639],
     orderstot =[79, 78]#, 77, 76, 75, 74, 73, 72, 71, 70, 69, 68, 67, 66, 65, 64, 63,
 #       62, 61, 60, 59, 58, 52, 51, 50, 49, 48, 47, 46, 45, 44, 43, 38, 37,
 #       36, 35, 34, 33, 32, 31]
-
-    #           "Vcorr47_Jun19-1_DRS2.txt",
-    #           "Vcorr48_Jun19-1_DRS2.txt"
-    #           ],
 
     pkl = ["../data/test_GL15A.pkl"],
 
@@ -168,17 +151,9 @@ def make_data(args):
     return dict(
         mass_MJ=mass_MJ,
         radius_RJ=radius_RJ,
-		gravity_SI = gravity_SI,
-		Rs_Rsun = Rs_Rsun,
-		inc = inc,
-		t0 = t0,
-		sma = sma,
-		orb_per = orb_per,
-		ecc = ecc,
-		w_peri = w_peri,
-		limbdark = limbdark,
-		u_limbdark = u_limbdark,
-		lambdas = lambdas,
+	gravity_SI = gravity_SI,
+	Rs_Rsun = Rs_Rsun,
+	lambdas = lambdas,
         orderstot=orderstot,
         num_transit=num_transit,
         pkl = pkl

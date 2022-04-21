@@ -19,17 +19,6 @@ class Model(object):
         self.gravity=config_dict["gravity_SI"]
         self.HHe_ratio=config_dict["HHe_ratio"]
 
-		#now the transit
-        self.inc = config_dict["inc"]
-        self.t0 = config_dict["t0"]
-        self.sma = config_dict["sma"]
-        self.orb_per = config_dict["orb_per"]
-        self.ecc =config_dict["ecc"]
-        self.w_peri = config_dict["w_peri"]
-        self.limbdark = config_dict["limbdark"]
-        self.u_limbdark = config_dict["u_limbdark"]
-
-
         self.lambdas = config_dict["lambdas"]
         self.orderstot = config_dict["orderstot"]
 

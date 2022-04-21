@@ -78,16 +78,7 @@ config = dict(
     gravity_SI= planet_data["gravity_SI"],
     P0_bar = 0.1,
     HHe_ratio=0.275,  # solar ratio
-    #now the transit parameters
-    inc = planet_data["inc"],
-    t0 = planet_data["t0"],
-    sma = planet_data["sma"],
-    orb_per = planet_data["orb_per"],
-    ecc = planet_data["ecc"],
-    w_peri = planet_data["w_peri"],
-    limbdark = planet_data["limbdark"],
-    u_limbdark = planet_data["u_limbdark"],
-    #the limit of the SPIRou orders
+   #the limit of the SPIRou orders
     lambdas = planet_data["lambdas"],
     orderstot = planet_data["orderstot"],
     pkl = planet_data["pkl"],
